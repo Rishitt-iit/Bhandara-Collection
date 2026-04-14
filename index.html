@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bhandara Collection Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>🙏 Bhandara Collection 2026</h1>
+        
+        <div class="input-box">
+            <input type="text" id="userName" placeholder="Enter Name (e.g. Rahul)">
+            <input type="number" id="userAmount" placeholder="Amount (e.g. 501)">
+            <button onclick="addEntry()">Add Entry</button>
+        </div>
+
+        <div class="summary">
+            <h3>Total Collection: ₹<span id="totalDisplay">0</span></h3>
+        </div>
+
+        <table id="collectionTable">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Amount (₹)</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
